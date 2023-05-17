@@ -1,0 +1,123 @@
+.logo{
+width:91.8%;
+height:91.8%;
+margin:1px auto;
+display:block;
+margin-top:.7%;
+margin-bottom:-.5%;
+}
+.logo-background{
+background-color:black;
+}
+ #stage {
+   width:91.7%;
+height:91.7%;
+margin:1px auto;
+display:block;
+   margin-top:0%;
+  }
+
+  #stage a {
+    position: absolute;
+  }
+  #stage a img {
+    padding: 0px;
+    border: 0px solid #ccc;
+    background: #fff;
+  }
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+.flex-item {
+    width: 100px;
+    height: 200px;
+
+}
+.button {
+    background-color:white;
+    border:none;
+height:470px;
+width:360px;
+
+  }
+   #stages {
+   width:91.7%;
+height:91.7%;
+margin:1px auto;
+display:block;
+   margin-top:0%;
+  }
+
+  #stages a {
+    position: absolute;
+  }
+  #stages a img {
+    padding: 0px;
+    border: 0px solid #ccc;
+    background: #fff;
+  }
+
+  #stages a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 2s;
+    animation-duration: .5s;
+    z-index: 20;
+  }
+  #stages a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stages a:nth-of-type(n+3) {
+    display: none;
+  }
+  .float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}  
+.vbuttons-ripple{
+    background-color: #484848;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    color: #fff;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    vertical-align: middle;
+	height:40px;
+	width:330px;
+}
+.vbuttons-ripple:hover{
+	background-color:red;
+}
